@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/demouser/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/demouser/Desktop/Briar_Android/Anagrams/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_936d5299004d58927c44061e93a618dc9377091d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/demouser/.android/build-cache/989bda656600f6c0290536fcd107216466792b36/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/Users/demouser/Desktop/Briar_Android/Anagrams/app/build/intermediates/pre-dexed/debug/classes_89b71f5504434fa794c143c9ad1a324c606b8b4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/demouser/.android/build-cache/d590c1fbd2452eeb8a9362b11128d324d675a726/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/demouser/Desktop/Briar_Android/Anagrams/app/build/intermediates/pre-dexed/debug/classes_b89778bcbfbb11a056c5a2c9534374572afc3cd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/demouser/.android/build-cache/916bc6a1bb20c753adcea07003d06c5ef983fbc1/output/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/demouser/Desktop/Briar_Android/Anagrams/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1_113bdb6b03ea53e0e5c7ab3677a88e3241b8670c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/demouser/.android/build-cache/916bc6a1bb20c753adcea07003d06c5ef983fbc1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/demouser/Desktop/Briar_Android/Anagrams/app/build/intermediates/pre-dexed/debug/classes_039bb031674bc9625670f1436728b49777d273ac.jar" />
+    </item>
+
+</items>
