@@ -22,6 +22,8 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 
@@ -32,32 +34,42 @@ public class AnagramDictionary {
     private static final int MAX_WORD_LENGTH = 7;
     private Random random = new Random();
     private ArrayList<String> wordList;
+    private HashSet<String> wordSet;
+    private HashMap<String, ArrayList<String>> lettersToWord;
+
 
     public AnagramDictionary(Reader reader) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         wordList = new ArrayList<>();
+        wordSet = new HashSet<>();
+        lettersToWord = new HashMap<>();
         String line;
         while((line = in.readLine()) != null) {
             String word = line.trim();
             wordList.add(word);
+            wordSet.add(word);
+            putInMap(word);
+        }
+    }
+
+    private void putInMap(String word){
+        String sortedWord = sortLetters(word);
+        if (lettersToWord.containsKey(sortedWord)){
+            ArrayList<String> currentList = lettersToWord.get(sortedWord);
+            currentList.add(word);
+        } else {
+            ArrayList<String> newList = new ArrayList<>();
+            newList.add(word);
+            lettersToWord.put(sortedWord, newList);
         }
     }
 
     public boolean isGoodWord(String word, String base) {
-        return true;
+        return (wordSet.contains(word) && wordSet.contains(base));
     }
 
     public List<String> getAnagrams(String targetWord) {
-        ArrayList<String> result = new ArrayList<>();
-        for (String word : wordList){
-            if (word.length() == targetWord.length()){
-                if (sortLetters(word).equals(sortLetters(targetWord))) {
-                    result.add(word);
-                    Log.i("Finding Anagrams", "The word " + word + " is an anagram of the targetWord " + targetWord);
-                }
-            }
-        }
-        return result;
+        return lettersToWord.get(sortLetters(targetWord));
     }
 
     public List<String> getAnagramsWithOneMoreLetter(String word) {
